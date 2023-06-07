@@ -1,0 +1,8 @@
+﻿@model Root
+
+<h1>Here are your Cincinnati Reds</h1>
+
+@foreach (var player in Model.roster_40.queryResults.row)
+{
+     <h3>@player.name_use @player.name_last @player.position_txt</h3>   
+}
